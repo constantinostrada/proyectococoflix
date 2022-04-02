@@ -1,0 +1,147 @@
+:root {
+    --rojo: #e50914;
+    --fondo:#141414;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--fondo);
+    font-family: 'Bebas Neue', cursiva;
+}
+.contenedor {
+    width: 90%;
+    margin: auto;
+    
+}
+.contenedor h2 {
+    font-size: 28px;
+    color: #e50914;
+    line-height: 1.5em;
+    
+
+
+}
+header {
+    padding: 30px 0;
+}
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+header nav a:hover ,
+header nav a.activo{
+    color: white;
+}
+
+header  img {
+    width: 350px;
+    height: 220px;
+    
+}
+/*Pelicula principal*/
+.pelicula_principal {
+    font: 16px;
+    min-height: 40.62em;
+    color: white;
+    background-image:  url(./img/interstellar_banner-2032707.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+    font-family:  'Roboto', sans-serif; ;
+    
+
+}
+.pelicula_principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+.pelicula_principal .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 20px;
+}
+.pelicula_principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50% ;
+    margin-bottom: 1.25em;
+
+}
+.pelicula_principal .boton {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 0.31;
+    padding: 0.93em 1.87em ;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.pelicula_principal .boton:hover {
+    background-color: #fff;
+    color: black;
+}
+.pelicula_principal .boton i {
+    margin-right: 1.25em ;
+}
+.peliculas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+.peliculas .infierno_blanco {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.peliculas .topgun{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.peliculas .tron {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+@media ( max-width:800px) {
+    header .logotipo {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .pelicula_principal {
+        font-size: 14px;
+    }
+    .pelicula_principal .descripcion {
+        max-width: 100%;
+    }
+
+}
+    
